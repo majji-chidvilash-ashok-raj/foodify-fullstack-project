@@ -4,6 +4,8 @@ import Home from './pages/home/home'
 import {Route,Routes} from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopUp/LoginPopup'
+import Cart from './pages/cart/cart'
+
 const App = () => {
   const [showLogin,setShowLogin]= useState(false)
   return (
@@ -13,7 +15,7 @@ const App = () => {
         <Navbar setShowLogin={setShowLogin} />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/cart" element={<cart/>} />
+            <Route path='/cart' element={<Cart />} />
             <Route path="/order" element={<placeorder/>} />
           </Routes>
         
